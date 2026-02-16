@@ -1,0 +1,5 @@
+[workspace]
+members = ["back", "pumpfun-rs"]
+
+[workspace.dependencies]
+pumpfun = { path = "pumpfun-rs", features = ["create-ata", "close-ata"] }

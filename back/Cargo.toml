@@ -1,0 +1,46 @@
+
+[package]
+name = "back"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.3.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.6.2", features = [] }
+tauri-plugin-log = "2"
+serde = { version = "1", features = ["derive"] }
+
+serde_json = "1"
+
+log = "0.4"
+rand = "0.8"
+
+anyhow = "1.0.44"
+
+base64 = "0.22.1"
+
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+reqwest = { version = "0.12.23", features = ["json", "multipart"] }
+
+solana-sdk = "2.1.16"
+solana-client = "2.1.16"
+solana-system-interface = "2.0.0"
+pumpfun = { workspace = true }
+dotenv = "0.15.0"
+once_cell = "1.21.3"
+
+env_logger = "0.11.6"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3.0", features = ["env-filter", "chrono"] }
+uuid = { version = "1.4", features = ["v4"] }
+parking_lot = "0.12"
+spl-token = "8.0.0"
+solana-account-decoder = "2.3.9"
+chrono = "0.4.42"
+solana-account-decoder-client-types = "2.3.9"

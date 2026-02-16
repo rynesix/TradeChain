@@ -1,0 +1,9 @@
+:root {
+  --left-sidebar-w: 14rem;  /* w-56 */
+  --right-sidebar-w: 16rem; /* w-64 */
+}
+
+.sidebar-left { width: var(--left-sidebar-w); }
+.sidebar-right { width: var(--right-sidebar-w); }
+
+html, body, #root { overflow-x: hidden; }

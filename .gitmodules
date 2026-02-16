@@ -1,0 +1,3 @@
+[submodule "pumpfun-rs"]
+	path = pumpfun-rs
+	url = git@github.com:bogardt/pumpfun-rs.git
